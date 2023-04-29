@@ -87,7 +87,7 @@ function set_classtime(){
 
 function setReasonCellWrapping(sheet, row) {
   var cell = sheet.getRange("F" + row);
-  var cell2 = sheet.getRange("H" + row);
+  var cell2 = sheet.getRange("J" + row);
   cell.setWrap(true);
   cell2.setWrap(true);
 }
@@ -101,7 +101,7 @@ function get_weekly_sheetname() {
 }
 
 function weekly_newsheet() {
-  var form = FormApp.openById("1khtgCyy4RFg6BfVNg_1PBoREwnSi0WAnTtsPVWM4r8U");  // 来訪者登録フォームは削除しないこと
+  var form = FormApp.openById("Form ID is private");  // 来訪者登録フォームは削除しないこと
 
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var startdate = new Date();
@@ -122,11 +122,11 @@ function weekly_newsheet() {
     sh.setColumnWidth(1, 160);
     sh.setColumnWidth(2, 35);
     sh.setColumnWidth(5, 180);
-    sh.setColumnWidth(8, 200);
-    //sh.setColumnWidth(9, 300);
-    var g1 = sh.getRange('G1');
-    var h1 = sh.getRange('H1');
-    //var i1 = sh.getRange('I1');
+    sh.setColumnWidth(10, 200);
+    //sh.setColumnWidth(11, 300);
+    var i1 = sh.getRange('I1');
+    var j1 = sh.getRange('J1');
+    //var k1 = sh.getRange('K1');
     g1.setValue("対応者");
     h1.setValue("内容");
     //i1.setValue("(新SA向け)対応の様子");
