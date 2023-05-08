@@ -127,9 +127,9 @@ function weekly_newsheet() {
     var i1 = sh.getRange('I1');
     var j1 = sh.getRange('J1');
     //var k1 = sh.getRange('K1');
-    g1.setValue("対応者");
-    h1.setValue("内容");
-    //i1.setValue("(新SA向け)対応の様子");
+    i1.setValue("対応者");
+    j1.setValue("内容");
+    //k1.setValue("(新SA向け)対応の様子");
   }
 }
 
