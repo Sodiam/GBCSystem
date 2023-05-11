@@ -23,7 +23,7 @@ function delete_trigger() {
   var triggers = ScriptApp.getProjectTriggers();
   triggers.forEach(function(trigger) {
     var name = trigger.getHandlerFunction();
-    if (name === "set_classtime" || name === "set_classtime2" || name === "hibinoTest") {
+    if (name === "set_classtime" || name === "set_classtime2") {
       ScriptApp.deleteTrigger(trigger);
       Logger.log("Trigger \"" + name + "\" was successfully deleted.");
     }
